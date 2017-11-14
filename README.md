@@ -12,15 +12,15 @@ This application is a language game that words in English are altered by adding 
 ![banner](gameScreenShotandFont/Banner.png)
 
 ## How to play?
-1. Click "Start" button
+**1.** Click **Start** button
 
 ![Main](gameScreenShotandFont/Frame1.png)
 
-2. Type your name then click :arrow_right: button
+**2.** Type your name then click :arrow_right: button (or click :arrow_left: button to go back to main menu )
 
 ![Name](gameScreenShotandFont/Frame4.png)
 
-3. Select level you want to play (if you want to change player name click :arrow_left: button)
+**3.** Select level you want to play (If you want to change player name click :arrow_left: button)
 
 ![Level](gameScreenShotandFont/Frame5.png)
 
