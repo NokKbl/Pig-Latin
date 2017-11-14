@@ -12,17 +12,17 @@
     ![banner](gameScreenShotandFont/Banner.png)
 
 ## How to play?
-### Click **Start** button
+### Click "Start" button
 
-    ![main](gameScreenShotandFont/Frame1.png)
+    ![Main](gameScreenShotandFont/Frame1.png)
 
 ### Type your name then click :arrow_right: button
 
-    ![name](gameScreenShotandFont/Frame4.png)
+    ![Name](gameScreenShotandFont/Frame4.png)
 
 ### Select level you want to play (if you want to change player name click :arrow_left: button)
 
-    ![level](gameScreenShotandFont/Frame5.png)
+    ![Level](gameScreenShotandFont/Frame5.png)
 
     **Easy**
         In easy mode, we'll give a word and choices for players. The players need to choose a correct answer and type letter into the answer box.
