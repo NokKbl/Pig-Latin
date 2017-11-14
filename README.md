@@ -12,30 +12,33 @@ This application is a language game that words in English are altered by adding 
 ![banner](gameScreenShotandFont/Banner.png)
 
 ## How to play?
-### Click "Start" button
+1. Click "Start" button
 
 ![Main](gameScreenShotandFont/Frame1.png)
 
-### Type your name then click :arrow_right: button
+2. Type your name then click :arrow_right: button
 
 ![Name](gameScreenShotandFont/Frame4.png)
 
-### Select level you want to play (if you want to change player name click :arrow_left: button)
+3. Select level you want to play (if you want to change player name click :arrow_left: button)
 
 ![Level](gameScreenShotandFont/Frame5.png)
 
-**Easy**
-        In easy mode, we'll give a word and choices for players. The players need to choose a correct answer and type letter into the answer box.
+- **Easy**
+
+    In easy mode, we'll give a word and choices for players. The players need to choose a correct answer and type letter into the answer box.
         
 ![EZ](gameScreenShotandFont/Frame6.png)
         
-**Medium**
+- **Medium**
+
     In medium mode, we'll only give a word to players and the players need to type a correct answer into the answer box below.
     
 ![MD](gameScreenShotandFont/Frame8.png)
     
-**Hard**
-        In hard mode, we'll give a phrase or a sentence to players and the players need to type a correct answer into the answer box below.
+- **Hard**
+
+    In hard mode, we'll give a phrase or a sentence to players and the players need to type a correct answer into the answer box below.
         
 ![H](gameScreenShotandFont/Frame7.png)
         
