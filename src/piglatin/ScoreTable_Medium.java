@@ -145,7 +145,7 @@ public class ScoreTable_Medium extends javax.swing.JFrame {
         getContentPane().add(newGBtn);
         newGBtn.setBounds(410, 420, 150, 70);
 
-        scBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/Score.png"))); // NOI18N
+        scBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/SCTabMed.png"))); // NOI18N
         getContentPane().add(scBG);
         scBG.setBounds(0, 0, 600, 500);
 
