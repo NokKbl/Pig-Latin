@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package piglatin;
 
 /**
@@ -11,11 +6,23 @@ package piglatin;
  */
 public class QA_Hard extends javax.swing.JFrame {
 
+    static int clicked = 0;
+    static private String[] qHd;
+    static private String[] qH = new String[5];
+    static private String[] ans = new String[5];
+    static String inAns;
+    static int score = 0;
+    static boolean check;
+
     /**
      * Creates new form Hard_No1
      */
     public QA_Hard() {
         initComponents();
+        Question.setQHard();
+        qHd = Question.getQHard();
+        qSplit(qHd);
+        qHard.setText(qH[clicked]);
     }
 
     /**
@@ -39,17 +46,16 @@ public class QA_Hard extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        qHard.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        qHard.setFont(new java.awt.Font("Marker Felt", 0, 24)); // NOI18N
         qHard.setForeground(new java.awt.Color(51, 0, 0));
         qHard.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         qHard.setText("Phrase / Sentence");
         getContentPane().add(qHard);
-        qHard.setBounds(60, 70, 480, 80);
+        qHard.setBounds(30, 70, 540, 80);
 
         hardAns.setFont(new java.awt.Font("Marker Felt", 0, 24)); // NOI18N
         hardAns.setForeground(new java.awt.Color(51, 0, 0));
         hardAns.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        hardAns.setText("Type your answer here");
         hardAns.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         getContentPane().add(hardAns);
         hardAns.setBounds(40, 306, 520, 80);
@@ -58,6 +64,11 @@ public class QA_Hard extends javax.swing.JFrame {
         nxtBtn.setBorderPainted(false);
         nxtBtn.setContentAreaFilled(false);
         nxtBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nxtBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nxtBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(nxtBtn);
         nxtBtn.setBounds(480, 420, 100, 60);
 
@@ -66,7 +77,49 @@ public class QA_Hard extends javax.swing.JFrame {
         hrdBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void setQandCheckAnsHard() {
+        qHard.setText(qH[clicked]);
+        inAns = hardAns.getText();
+        check = CheckAndCount.checkA(ans[clicked], inAns);
+        score = CheckAndCount.scoreHard(check, score);
+    }
+
+    private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
+        clicked++;
+        inAns = hardAns.getText();
+        check = CheckAndCount.checkA(ans[clicked - 1], inAns);
+        score = CheckAndCount.scoreHard(check, score);
+        hardAns.setText("");
+        switch (clicked) {
+            case 1:
+                setQandCheckAnsHard();
+                break;
+            case 2:
+                setQandCheckAnsHard();
+                break;
+            case 3:
+                setQandCheckAnsHard();
+                break;
+            case 4:
+                setQandCheckAnsHard();
+                break;
+            default:
+                clicked = 0;
+                new ScoreTable_Hard().setVisible(true);
+                dispose();
+        }
+    }//GEN-LAST:event_nxtBtnActionPerformed
+
+    static private void qSplit(String[] qHd) {
+        for (int i = 0; i < qHd.length; i++) {
+            String[] array = qHd[i].trim().split("; ");
+            qH[i] = array[0];
+            ans[i] = array[1];
+        }
+    }
 
     /**
      * @param args the command line arguments

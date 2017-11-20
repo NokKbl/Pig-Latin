@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package piglatin;
 
 /**
@@ -11,11 +6,23 @@ package piglatin;
  */
 public class QA_Medium extends javax.swing.JFrame {
 
+    static int clicked = 0;
+    static private String[] qMd;
+    static private String[] qM = new String[10];
+    static private String[] ans = new String[10];
+    static String inAns;
+    static int score = 0;
+    static boolean check;
+
     /**
      * Creates new form Medium_QA
      */
     public QA_Medium() {
         initComponents();
+        Question.setQMedium();
+        qMd = Question.getQMedium();
+        qSplit(qMd);
+        qMed.setText(qM[clicked]);
     }
 
     /**
@@ -42,7 +49,6 @@ public class QA_Medium extends javax.swing.JFrame {
         medAns.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
         medAns.setForeground(new java.awt.Color(51, 0, 0));
         medAns.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        medAns.setText("Answer Here");
         medAns.setToolTipText("");
         medAns.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         getContentPane().add(medAns);
@@ -52,10 +58,15 @@ public class QA_Medium extends javax.swing.JFrame {
         nxtBtn.setBorderPainted(false);
         nxtBtn.setContentAreaFilled(false);
         nxtBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nxtBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nxtBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(nxtBtn);
         nxtBtn.setBounds(470, 409, 106, 60);
 
-        qMed.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        qMed.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         qMed.setForeground(new java.awt.Color(51, 0, 0));
         qMed.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         qMed.setText("word");
@@ -67,7 +78,64 @@ public class QA_Medium extends javax.swing.JFrame {
         medBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void setQandCheckAnsMedium() {
+        qMed.setText(qM[clicked]);
+        inAns = medAns.getText();
+        check = CheckAndCount.checkA(ans[clicked], inAns);
+        score = CheckAndCount.scoreMedium(check, score);
+    }
+
+    private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
+        clicked++;
+        inAns = medAns.getText();
+        check = CheckAndCount.checkA(ans[clicked - 1], inAns);
+        score = CheckAndCount.scoreMedium(check, score);
+        medAns.setText("");
+        switch (clicked) {
+            case 1:
+                setQandCheckAnsMedium();
+                break;
+            case 2:
+                setQandCheckAnsMedium();
+                break;
+            case 3:
+                setQandCheckAnsMedium();
+                break;
+            case 4:
+                setQandCheckAnsMedium();
+                break;
+            case 5:
+                setQandCheckAnsMedium();
+                break;
+            case 6:
+                setQandCheckAnsMedium();
+                break;
+            case 7:
+                setQandCheckAnsMedium();
+                break;
+            case 8:
+                setQandCheckAnsMedium();
+                break;
+            case 9:
+                setQandCheckAnsMedium();
+                break;
+            default:
+                clicked = 0;
+                new ScoreTable_Medium().setVisible(true);
+                dispose();
+        }
+    }//GEN-LAST:event_nxtBtnActionPerformed
+
+    static private void qSplit(String[] qMd) {
+        for (int i = 0; i < qMd.length; i++) {
+            String[] array = qMd[i].trim().split("; ");
+            qM[i] = array[0];
+            ans[i] = array[1];
+        }
+    }
 
     /**
      * @param args the command line arguments

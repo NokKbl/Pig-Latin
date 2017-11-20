@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package piglatin;
 
 /**
@@ -81,30 +76,35 @@ public class ScoreTable_Hard extends javax.swing.JFrame {
 
         scoreP1.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         scoreP1.setForeground(new java.awt.Color(102, 51, 0));
+        scoreP1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         scoreP1.setText("XXXXX");
         getContentPane().add(scoreP1);
         scoreP1.setBounds(450, 170, 90, 40);
 
         scoreP2.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         scoreP2.setForeground(new java.awt.Color(102, 51, 0));
+        scoreP2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         scoreP2.setText("XXXXX");
         getContentPane().add(scoreP2);
         scoreP2.setBounds(450, 210, 90, 40);
 
         scoreP3.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         scoreP3.setForeground(new java.awt.Color(102, 51, 0));
+        scoreP3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         scoreP3.setText("XXXXX");
         getContentPane().add(scoreP3);
         scoreP3.setBounds(450, 260, 90, 40);
 
         scoreP4.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         scoreP4.setForeground(new java.awt.Color(102, 51, 0));
+        scoreP4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         scoreP4.setText("XXXXX");
         getContentPane().add(scoreP4);
         scoreP4.setBounds(450, 300, 90, 40);
 
         scoreP5.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         scoreP5.setForeground(new java.awt.Color(102, 51, 0));
+        scoreP5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         scoreP5.setText("XXXXX");
         getContentPane().add(scoreP5);
         scoreP5.setBounds(450, 350, 90, 40);
@@ -150,6 +150,7 @@ public class ScoreTable_Hard extends javax.swing.JFrame {
         scBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void newBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newBtnActionPerformed
@@ -163,7 +164,6 @@ public class ScoreTable_Hard extends javax.swing.JFrame {
     }//GEN-LAST:event_mainBtnActionPerformed
 
     private void restartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restartBtnActionPerformed
-        //TODO put code to reset the score of this player in this level to be 0
         new QA_Hard().setVisible(true);
         dispose();
     }//GEN-LAST:event_restartBtnActionPerformed

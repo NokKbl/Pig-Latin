@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package piglatin;
 
 /**
- *
- * @author nxxkxxk
+ * 
+ * 
+ * @author Kunyaruk Katebunlu
  */
 public class MainGame extends javax.swing.JFrame {
 
@@ -94,6 +90,7 @@ public class MainGame extends javax.swing.JFrame {
         mainBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void startBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBtnActionPerformed

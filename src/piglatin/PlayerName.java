@@ -37,7 +37,6 @@ public class PlayerName extends javax.swing.JFrame {
         playerName.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
         playerName.setForeground(new java.awt.Color(51, 0, 0));
         playerName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        playerName.setText("Player Name");
         playerName.setAutoscrolls(false);
         playerName.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         getContentPane().add(playerName);
@@ -72,6 +71,7 @@ public class PlayerName extends javax.swing.JFrame {
         nmBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void backBtnAcitonPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnAcitonPerformed

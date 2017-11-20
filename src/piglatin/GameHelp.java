@@ -1,8 +1,10 @@
 package piglatin;
 
 /**
- *
- * @author nxxkxxk
+ * Show game description and guide how to change English language into
+ * Pig Latin language with some examples for players.
+ * 
+ * @author Kunyaruk Katebunlu
  */
 public class GameHelp extends javax.swing.JFrame {
 
@@ -49,8 +51,12 @@ public class GameHelp extends javax.swing.JFrame {
         hlpBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Open main game frame and close this frame when click button.
+     */
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         new MainGame().setVisible(true);
         dispose();

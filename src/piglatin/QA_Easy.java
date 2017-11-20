@@ -6,11 +6,27 @@ package piglatin;
  */
 public class QA_Easy extends javax.swing.JFrame {
 
+    static int clicked = 0;
+    static private String[] qEasy;
+    static private String[] qE = new String[10];
+    static private String[] a = new String[10];
+    static private String[] b = new String[10];
+    static private String[] c = new String[10];
+    static private String[] d = new String[10];
+    static private String[] ans = new String[10];
+    static String inAns;
+    static int score = 0;
+    static boolean check;
+
     /**
      * Creates new form Easy_QA
      */
     public QA_Easy() {
         initComponents();
+        Question.setQEasy();
+        qEasy = Question.getQEasy();
+        qSplit(qEasy);
+        setQandChoices();
     }
 
     /**
@@ -38,35 +54,35 @@ public class QA_Easy extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        qEZ.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        qEZ.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         qEZ.setForeground(new java.awt.Color(51, 0, 0));
         qEZ.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         qEZ.setText("word");
         getContentPane().add(qEZ);
         qEZ.setBounds(210, 70, 180, 50);
 
-        choiceA.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        choiceA.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
         choiceA.setForeground(new java.awt.Color(51, 0, 0));
         choiceA.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceA.setText("choice1");
         getContentPane().add(choiceA);
         choiceA.setBounds(170, 200, 140, 50);
 
-        choiceB.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        choiceB.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
         choiceB.setForeground(new java.awt.Color(51, 0, 0));
         choiceB.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceB.setText("choice2");
         getContentPane().add(choiceB);
         choiceB.setBounds(360, 200, 150, 50);
 
-        choiceC.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        choiceC.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
         choiceC.setForeground(new java.awt.Color(51, 0, 0));
         choiceC.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceC.setText("choice3");
         getContentPane().add(choiceC);
         choiceC.setBounds(160, 260, 150, 50);
 
-        choiceD.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        choiceD.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
         choiceD.setForeground(new java.awt.Color(51, 0, 0));
         choiceD.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceD.setText("choice4");
@@ -84,6 +100,11 @@ public class QA_Easy extends javax.swing.JFrame {
         nxtBtn.setBorderPainted(false);
         nxtBtn.setContentAreaFilled(false);
         nxtBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        nxtBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nxtBtnActionPerformed(evt);
+            }
+        });
         getContentPane().add(nxtBtn);
         nxtBtn.setBounds(490, 430, 90, 60);
 
@@ -92,7 +113,76 @@ public class QA_Easy extends javax.swing.JFrame {
         ezBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    static private void qSplit(String[] qEasy) {
+        for (int i = 0; i < qEasy.length; i++) {
+            String[] array = qEasy[i].trim().split("; ");
+            qE[i] = array[0];
+            a[i] = array[1];
+            b[i] = array[2];
+            c[i] = array[3];
+            d[i] = array[4];
+            ans[i] = array[5];
+        }
+    }
+
+    private void setQandChoices(){
+        qEZ.setText(qE[clicked]);
+        choiceA.setText(a[clicked]);
+        choiceB.setText(b[clicked]);
+        choiceC.setText(c[clicked]);
+        choiceD.setText(d[clicked]);
+    }
+    
+    private void checkAnsEasy() {
+        setQandChoices();
+        inAns = ezAns.getText();
+        check = CheckAndCount.checkA(ans[clicked], inAns);
+        score = CheckAndCount.scoreEasy(check, score);
+    }
+
+    private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
+        clicked++;
+        inAns = ezAns.getText();
+        check = CheckAndCount.checkA(ans[clicked - 1], inAns);
+        score = CheckAndCount.scoreEasy(check, score);
+        ezAns.setText("");
+        switch (clicked) {
+            case 1:
+                checkAnsEasy();
+                break;
+            case 2:
+                checkAnsEasy();
+                break;
+            case 3:
+                checkAnsEasy();
+                break;
+            case 4:
+                checkAnsEasy();
+                break;
+            case 5:
+                checkAnsEasy();
+            case 6:
+                checkAnsEasy();
+                break;
+            case 7:
+                checkAnsEasy();
+                break;
+            case 8:
+                checkAnsEasy();
+                break;
+            case 9:
+                checkAnsEasy();
+                break;
+            default:
+                clicked = 0;
+                new ScoreTable_Easy().setVisible(true);
+                dispose();
+        }
+
+    }//GEN-LAST:event_nxtBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -125,7 +215,7 @@ public class QA_Easy extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-              new QA_Easy().setVisible(true);
+                new QA_Easy().setVisible(true);
             }
         });
     }

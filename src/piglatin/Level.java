@@ -1,13 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package piglatin;
 
 /**
- *
- * @author nxxkxxk
+ * Choose level (easy, medium, hard) that players want to play by click
+ * button for each level and also have button for back to main game menu.
+ * 
+ * @author Kunyaruk Katebunlu
  */
 public class Level extends javax.swing.JFrame {
 
@@ -93,23 +90,36 @@ public class Level extends javax.swing.JFrame {
         lvBG.setBounds(0, 0, 600, 500);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Open main game frame and close this frame when click button.
+     */
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         new PlayerName().setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
 
+    /**
+     * Go to easy level game frame and close this frame when click button.
+     */
     private void ezBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ezBtnActionPerformed
         new QA_Easy().setVisible(true);
         dispose();
     }//GEN-LAST:event_ezBtnActionPerformed
 
+    /**
+     * Go to medium level game frame and close this frame when click button.
+     */
     private void medBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_medBtnActionPerformed
         new QA_Medium().setVisible(true);
         dispose();
     }//GEN-LAST:event_medBtnActionPerformed
 
+    /**
+     * Go to hard level game frame and close this frame when click button.
+     */
     private void hrdBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hrdBtnActionPerformed
         new QA_Hard().setVisible(true);
         dispose();
