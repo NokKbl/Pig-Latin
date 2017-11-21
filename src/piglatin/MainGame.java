@@ -1,7 +1,7 @@
 package piglatin;
 
 /**
- * 
+ * Main menu for Igpay Atinlay (Pig Latin) game.
  * 
  * @author Kunyaruk Katebunlu
  */
@@ -59,7 +59,7 @@ public class MainGame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(exitBtn);
-        exitBtn.setBounds(230, 340, 159, 75);
+        exitBtn.setBounds(230, 340, 142, 78);
 
         aboutBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/AboutB.png"))); // NOI18N
         aboutBtn.setBorderPainted(false);
