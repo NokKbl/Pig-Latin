@@ -5,12 +5,8 @@ package piglatin;
  * @author nxxkxxk
  */
 public class PlayerName extends javax.swing.JFrame {
-<<<<<<< HEAD
-
     static String pName;
-=======
     static String playerN;
->>>>>>> 48e720ab844e5ce9b91694e0ba3f3658dc0448af
     /**
      * Creates new form PlayerName
      */
@@ -58,7 +54,7 @@ public class PlayerName extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nxtBtn);
-        nxtBtn.setBounds(480, 430, 123, 60);
+        nxtBtn.setBounds(480, 430, 106, 60);
 
         backBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/Back.png"))); // NOI18N
         backBtn.setBorderPainted(false);
@@ -86,11 +82,8 @@ public class PlayerName extends javax.swing.JFrame {
     }//GEN-LAST:event_backBtnAcitonPerformed
 
     private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
-<<<<<<< HEAD
         pName = playerName.getText();
-=======
         playerN = playerName.getText();
->>>>>>> 48e720ab844e5ce9b91694e0ba3f3658dc0448af
         this.setVisible(false);
         new Level().setVisible(true);
     }//GEN-LAST:event_nxtBtnActionPerformed
