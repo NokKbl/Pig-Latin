@@ -1,7 +1,0 @@
-#Name; Score
-
-xxxx; 0
-xxxx; 0
-xxxx; 0
-xxxx; 0
-xxxx; 0
