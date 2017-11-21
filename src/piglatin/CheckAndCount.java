@@ -23,37 +23,49 @@ public class CheckAndCount {
     /**
      * Calculate score for easy level after checked answer.
      * 
-     * @param check is result from check the answer
+     * @param check is result from checkA() method (True/False)
      * @param score is initial score
      * @return total score
      */
     public static int scoreEasy(boolean check, int score){
         if(check == true) return score += 10;
-        return score += 0;
+        return score;
     }
     
     /**
      * Calculate score for medium level after checked answer.
      * 
-     * @param check is result from check the answer
+     * @param check is result from checkA() method (True/False)
      * @param score is initial score
      * @return total score
      */
     public static int scoreMedium(boolean check, int score){
         if(check == true) return score += 50;
-        return score += 0;
+        return score;
     }
     
     /**
      * Calculate score for hard level after checked answer.
      * 
-     * @param check is result from check the answer
+     * @param check is result from checkA() method (True/False)
      * @param score is initial score
      * @return total score
      */
     public static int scoreHard(boolean check, int score){
         if(check == true) return score += 200;
-        return score += 0;
+        return score;
+    }
+    
+    /**
+     * Count amount of correct answer.
+     * 
+     * @param check is result from checkA() method (True/False) 
+     * @param correct is initial correct amount
+     * @return amount of correct number
+     */
+    public static int countCorrect(boolean check, int correct){
+        if(check == true) return correct += 1;
+        return correct;
     }
     
 }

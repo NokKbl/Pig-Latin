@@ -13,6 +13,8 @@ public class QA_Medium extends javax.swing.JFrame {
     static String inAns;
     static int score = 0;
     static boolean check;
+    static int correct = 0;
+    static int wrong = 0;
 
     /**
      * Creates new form Medium_QA
@@ -85,6 +87,8 @@ public class QA_Medium extends javax.swing.JFrame {
         qMed.setText(qM[clicked]);
         inAns = medAns.getText();
         check = CheckAndCount.checkA(ans[clicked], inAns);
+        correct = CheckAndCount.countCorrect(check, correct);
+        wrong = 10 - correct;
         score = CheckAndCount.scoreMedium(check, score);
     }
 
@@ -92,6 +96,8 @@ public class QA_Medium extends javax.swing.JFrame {
         clicked++;
         inAns = medAns.getText();
         check = CheckAndCount.checkA(ans[clicked - 1], inAns);
+        correct = CheckAndCount.countCorrect(check, correct);
+        wrong = 10 - correct;
         score = CheckAndCount.scoreMedium(check, score);
         medAns.setText("");
         switch (clicked) {
@@ -124,7 +130,7 @@ public class QA_Medium extends javax.swing.JFrame {
                 break;
             default:
                 clicked = 0;
-                new ScoreTable_Medium().setVisible(true);
+                new ScoreInfo_Medium().setVisible(true);
                 dispose();
         }
     }//GEN-LAST:event_nxtBtnActionPerformed

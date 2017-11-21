@@ -13,6 +13,8 @@ public class QA_Hard extends javax.swing.JFrame {
     static String inAns;
     static int score = 0;
     static boolean check;
+    static int correct = 0;
+    static int wrong = 0;
 
     /**
      * Creates new form Hard_No1
@@ -84,6 +86,8 @@ public class QA_Hard extends javax.swing.JFrame {
         qHard.setText(qH[clicked]);
         inAns = hardAns.getText();
         check = CheckAndCount.checkA(ans[clicked], inAns);
+        correct = CheckAndCount.countCorrect(check, correct);
+        wrong = 5 - correct;
         score = CheckAndCount.scoreHard(check, score);
     }
 
@@ -91,6 +95,8 @@ public class QA_Hard extends javax.swing.JFrame {
         clicked++;
         inAns = hardAns.getText();
         check = CheckAndCount.checkA(ans[clicked - 1], inAns);
+        correct = CheckAndCount.countCorrect(check, correct);
+        wrong = 5 - correct;
         score = CheckAndCount.scoreHard(check, score);
         hardAns.setText("");
         switch (clicked) {
@@ -108,7 +114,7 @@ public class QA_Hard extends javax.swing.JFrame {
                 break;
             default:
                 clicked = 0;
-                new ScoreTable_Hard().setVisible(true);
+                new ScoreInfo_Hard().setVisible(true);
                 dispose();
         }
     }//GEN-LAST:event_nxtBtnActionPerformed

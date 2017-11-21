@@ -17,6 +17,8 @@ public class QA_Easy extends javax.swing.JFrame {
     static String inAns;
     static int score = 0;
     static boolean check;
+    static int correct = 0;
+    static int wrong = 0;
 
     /**
      * Creates new form Easy_QA
@@ -140,6 +142,8 @@ public class QA_Easy extends javax.swing.JFrame {
         setQandChoices();
         inAns = ezAns.getText();
         check = CheckAndCount.checkA(ans[clicked], inAns);
+        correct = CheckAndCount.countCorrect(check, correct);
+        wrong = 10 - correct;
         score = CheckAndCount.scoreEasy(check, score);
     }
 
@@ -147,6 +151,8 @@ public class QA_Easy extends javax.swing.JFrame {
         clicked++;
         inAns = ezAns.getText();
         check = CheckAndCount.checkA(ans[clicked - 1], inAns);
+        correct = CheckAndCount.countCorrect(check, correct);
+        wrong = 10 - correct;
         score = CheckAndCount.scoreEasy(check, score);
         ezAns.setText("");
         switch (clicked) {
@@ -178,7 +184,7 @@ public class QA_Easy extends javax.swing.JFrame {
                 break;
             default:
                 clicked = 0;
-                new ScoreTable_Easy().setVisible(true);
+                new ScoreInfo_Easy().setVisible(true);
                 dispose();
         }
 
