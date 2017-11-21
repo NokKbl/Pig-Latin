@@ -1,5 +1,10 @@
 package piglatin;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import static piglatin.QA_Easy.score;
+
 /**
  *
  * @author nxxkxxk
@@ -64,7 +69,7 @@ public class QA_Medium extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nxtBtn);
-        nxtBtn.setBounds(470, 409, 106, 60);
+        nxtBtn.setBounds(470, 409, 123, 60);
 
         qMed.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
         qMed.setForeground(new java.awt.Color(51, 0, 0));
@@ -124,6 +129,22 @@ public class QA_Medium extends javax.swing.JFrame {
                 break;
             default:
                 clicked = 0;
+                  String scoreTotal = Integer.toString(score);
+                String txt = ScoreTable.recordScore(PlayerName.playerN, scoreTotal);
+        {
+            try {
+                ScoreTable.writeToFileMedium(txt);
+            } catch (IOException ex) {
+                Logger.getLogger(QA_Easy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            }
+        }
+        {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(QA_Medium.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
                 new ScoreTable_Medium().setVisible(true);
                 dispose();
         }

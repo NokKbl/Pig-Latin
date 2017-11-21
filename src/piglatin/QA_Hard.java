@@ -1,5 +1,10 @@
 package piglatin;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import static piglatin.QA_Easy.score;
+
 /**
  *
  * @author nxxkxxk
@@ -108,6 +113,22 @@ public class QA_Hard extends javax.swing.JFrame {
                 break;
             default:
                 clicked = 0;
+                  String scoreTotal = Integer.toString(score);
+                String txt = ScoreTable.recordScore(PlayerName.playerN, scoreTotal);
+        {
+            try {
+                ScoreTable.writeToFileHard(txt);
+            } catch (IOException ex) {
+                Logger.getLogger(QA_Easy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            }
+        }
+        {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(QA_Hard.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
                 new ScoreTable_Hard().setVisible(true);
                 dispose();
         }

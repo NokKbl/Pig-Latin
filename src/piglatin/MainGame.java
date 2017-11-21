@@ -59,7 +59,7 @@ public class MainGame extends javax.swing.JFrame {
             }
         });
         getContentPane().add(exitBtn);
-        exitBtn.setBounds(230, 340, 142, 78);
+        exitBtn.setBounds(230, 340, 159, 75);
 
         aboutBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/AboutB.png"))); // NOI18N
         aboutBtn.setBorderPainted(false);
