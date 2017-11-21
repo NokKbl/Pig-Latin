@@ -93,21 +93,33 @@ public class MainGame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Open player name frame and close this frame.
+     */
     private void startBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBtnActionPerformed
         new PlayerName().setVisible(true);
         dispose();
     }//GEN-LAST:event_startBtnActionPerformed
 
+    /**
+     * Open game about frame and close this frame.
+     */
     private void aboutBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutBtnActionPerformed
         new GameAbout().setVisible(true);
         dispose();
     }//GEN-LAST:event_aboutBtnActionPerformed
 
+    /**
+     * Open game help frame and close this frame.
+     */
     private void helpBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpBtnActionPerformed
         new GameHelp().setVisible(true);
         dispose();
     }//GEN-LAST:event_helpBtnActionPerformed
 
+    /**
+     * Exit game.
+     */
     private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
         System.exit(0);
     }//GEN-LAST:event_exitBtnActionPerformed

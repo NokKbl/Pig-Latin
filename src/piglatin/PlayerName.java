@@ -1,12 +1,13 @@
 package piglatin;
 
 /**
- *
- * @author nxxkxxk
+ * Get input player's name from player.
+ * 
+ * @author Kunyaruk Katebunlu
+ * @author Vichakorn Yotboonrueang
  */
 public class PlayerName extends javax.swing.JFrame {
     static String pName;
-    static String playerN;
     /**
      * Creates new form PlayerName
      */
@@ -83,7 +84,6 @@ public class PlayerName extends javax.swing.JFrame {
 
     private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
         pName = playerName.getText();
-        playerN = playerName.getText();
         this.setVisible(false);
         new Level().setVisible(true);
     }//GEN-LAST:event_nxtBtnActionPerformed
