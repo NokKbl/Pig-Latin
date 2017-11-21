@@ -44,7 +44,7 @@ This application is a language game that words in English are altered by adding 
         
     
 ### Score Info 
-Score Info will show correct and wrong amount of players, name score and some word depends on what score players got.
+Score Info will show correct and wrong problems amount of players , name score and some word depends on the score that players got.
     
 ![ST](gameScreenShotandFont/Frame9.png)
     
