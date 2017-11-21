@@ -53,6 +53,7 @@ public class ScoreInfo_Hard extends javax.swing.JFrame {
         hardBG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Score Info [Hard Lv.]");
         setMinimumSize(new java.awt.Dimension(600, 500));
         setPreferredSize(new java.awt.Dimension(600, 522));
         getContentPane().setLayout(null);
