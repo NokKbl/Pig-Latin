@@ -43,8 +43,8 @@ This application is a language game that words in English are altered by adding 
 ![H](gameScreenShotandFont/Frame7.png)
         
     
-### Score Table
-The score table will show top 5 player's names and scores.
+### Score Info 
+Score Info will show correct and wrong amount of players, name score and some word depends on what score players got.
     
 ![ST](gameScreenShotandFont/Frame9.png)
     
