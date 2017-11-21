@@ -1,5 +1,9 @@
 package piglatin;
 
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author nxxkxxk
@@ -184,10 +188,32 @@ public class QA_Easy extends javax.swing.JFrame {
                 break;
             default:
                 clicked = 0;
+<<<<<<< HEAD
                 new ScoreInfo_Easy().setVisible(true);
+=======
+                String scoreTotal = Integer.toString(score);
+                String txt = ScoreTable.recordScore(PlayerName.playerN, scoreTotal);
+        {
+            try {
+                ScoreTable.writeToFileEasy(txt);
+            } catch (IOException ex) {
+                Logger.getLogger(QA_Easy.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(QA_Easy.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        {
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(QA_Easy.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+                new ScoreTable_Easy().setVisible(true);
+>>>>>>> 48e720ab844e5ce9b91694e0ba3f3658dc0448af
                 dispose();
         }
-
+        
     }//GEN-LAST:event_nxtBtnActionPerformed
 
     /**
