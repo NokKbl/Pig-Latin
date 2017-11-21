@@ -1,12 +1,11 @@
 package piglatin;
 
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 /**
- *
- * @author nxxkxxk
+ * Get, split and show questions and choices in easy level,
+ * get input answer from players then check answer, count correct/wrong
+ * problem and count score.
+ * 
+ * @author Kunyaruk Katebunlu
  */
 public class QA_Easy extends javax.swing.JFrame {
 
@@ -122,6 +121,11 @@ public class QA_Easy extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Split question and choices and keep in array for each type.
+     * 
+     * @param qEasy is array of easy problem set.
+     */
     static private void qSplit(String[] qEasy) {
         for (int i = 0; i < qEasy.length; i++) {
             String[] array = qEasy[i].trim().split("; ");
@@ -134,6 +138,9 @@ public class QA_Easy extends javax.swing.JFrame {
         }
     }
 
+    /**
+     * Set question and choices text to show in each jLabel.
+     */
     private void setQandChoices(){
         qEZ.setText(qE[clicked]);
         choiceA.setText(a[clicked]);
@@ -142,6 +149,9 @@ public class QA_Easy extends javax.swing.JFrame {
         choiceD.setText(d[clicked]);
     }
     
+    /**
+     * Check answer, calculate score and count correct/wrong problems amount.
+     */
     private void checkAnsEasy() {
         setQandChoices();
         inAns = ezAns.getText();
@@ -151,6 +161,11 @@ public class QA_Easy extends javax.swing.JFrame {
         score = CheckAndCount.scoreEasy(check, score);
     }
 
+    /**
+     * Count clicked number and check case to show question and choices in each
+     * index, if no match case then open score info for easy level frame 
+     * and close this frame.
+     */
     private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
         clicked++;
         inAns = ezAns.getText();

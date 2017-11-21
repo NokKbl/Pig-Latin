@@ -13,7 +13,6 @@ public class PlayerName extends javax.swing.JFrame {
      */
     public PlayerName() {
         initComponents();
-        
     }
 
     /**
@@ -77,15 +76,21 @@ public class PlayerName extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Open main game frame and close this frame.
+     */
     private void backBtnAcitonPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnAcitonPerformed
-        this.setVisible(false);
         new MainGame().setVisible(true);
+        dispose();
     }//GEN-LAST:event_backBtnAcitonPerformed
 
+    /**
+     * Get player name, open game level frame and close this frame.
+     */
     private void nxtBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nxtBtnActionPerformed
         pName = playerName.getText();
-        this.setVisible(false);
         new Level().setVisible(true);
+        dispose();
     }//GEN-LAST:event_nxtBtnActionPerformed
 
     /**

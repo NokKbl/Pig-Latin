@@ -1,13 +1,15 @@
 package piglatin;
 
 /**
- *
+ * Show name, score result and other informations for medium level.
+ * 
  * @author Kunyaruk Katebunlu
+ * @author Vichakorn Yotboonrueang
  */
 public class ScoreInfo_Medium extends javax.swing.JFrame {
 
     /**
-     * Creates new form ScoreInfo_Medium
+     * Creates new form ScoreInfo_Easy and set text for each jLabel.
      */
     public ScoreInfo_Medium() {
         initComponents();
@@ -131,6 +133,10 @@ public class ScoreInfo_Medium extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Open medium level game frame, close this frame and reset score,
+     * correct and wrong amount.
+     */
     private void restartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restartBtnActionPerformed
         QA_Medium.score = 0;
         QA_Medium.correct = 0;
@@ -139,6 +145,10 @@ public class ScoreInfo_Medium extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_restartBtnActionPerformed
 
+    /**
+     * Open main game frame, close this frame and reset score,
+     * correct and wrong amount.
+     */
     private void mainBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainBtnActionPerformed
         QA_Medium.score = 0;
         QA_Medium.correct = 0;
@@ -147,6 +157,10 @@ public class ScoreInfo_Medium extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_mainBtnActionPerformed
 
+    /**
+     * Open player name frame, close this frame and reset score,
+     * correct and wrong amount.
+     */
     private void newGBtnnewBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newGBtnnewBtnActionPerformed
         QA_Medium.score = 0;
         QA_Medium.correct = 0;

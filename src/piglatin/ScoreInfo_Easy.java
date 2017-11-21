@@ -1,13 +1,15 @@
 package piglatin;
 
 /**
- *
+ * Show name, score result and other informations for easy level.
+ * 
  * @author Kunyaruk Katebunlu
+ * @author Vichakorn Yotboonrueang
  */
 public class ScoreInfo_Easy extends javax.swing.JFrame {
 
     /**
-     * Creates new form ScoreInfo_Easy
+     * Creates new form ScoreInfo_Easy and set text for each jLabel.
      */
     public ScoreInfo_Easy() {
         initComponents();
@@ -18,15 +20,15 @@ public class ScoreInfo_Easy extends javax.swing.JFrame {
         correctNo.setText(c);
         String w = Integer.toString(QA_Easy.wrong);
         wrongNo.setText(w);
-        if(QA_Easy.score == 100){
+        if (QA_Easy.score == 100) {
             text.setText("W o n d e r f u l !");
-        }else if (QA_Easy.score == 90 || QA_Easy.score == 80){
+        } else if (QA_Easy.score == 90 || QA_Easy.score == 80) {
             text.setText("A m a z i n g !");
-        }else if (QA_Easy.score == 70 || QA_Easy.score == 60){
+        } else if (QA_Easy.score == 70 || QA_Easy.score == 60) {
             text.setText("A w e s o m e !");
-        }else if (QA_Easy.score == 50 || QA_Easy.score == 40){
+        } else if (QA_Easy.score == 50 || QA_Easy.score == 40) {
             text.setText("G o o d  J o b !");
-        }else {
+        } else {
             text.setText("Learn  More !");
         }
     }
@@ -131,6 +133,10 @@ public class ScoreInfo_Easy extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Open easy level game frame, close this frame and reset score,
+     * correct and wrong amount.
+     */
     private void restartBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_restartBtnActionPerformed
         QA_Easy.score = 0;
         QA_Easy.correct = 0;
@@ -139,6 +145,10 @@ public class ScoreInfo_Easy extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_restartBtnActionPerformed
 
+    /**
+     * Open main game frame, close this frame and reset score,
+     * correct and wrong amount.
+     */
     private void mainBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainBtnActionPerformed
         QA_Easy.score = 0;
         QA_Easy.correct = 0;
@@ -147,6 +157,10 @@ public class ScoreInfo_Easy extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_mainBtnActionPerformed
 
+    /**
+     * Open player name frame, close this frame and reset score,
+     * correct and wrong amount.
+     */
     private void newBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newBtnActionPerformed
         QA_Easy.score = 0;
         QA_Easy.correct = 0;

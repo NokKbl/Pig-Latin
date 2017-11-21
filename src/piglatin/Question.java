@@ -7,14 +7,18 @@ import java.util.Random;
 
 public class Question {
 
-    static final String menuFileEasy = "qData/easyQandA.txt";
-    static final String menuFileMedium = "qData/mediumQandA.txt";
-    static final String menuFileHard = "qData/hardQandA.txt";
+    static String menuFileEasy = "qData/easyQandA.txt";
+    static String menuFileMedium = "qData/mediumQandA.txt";
+    static String menuFileHard = "qData/hardQandA.txt";
     static private String itemsEasy[];
     static private String itemsMedium[];
     static private String itemsHard[];
     static Random rand = new Random();
 
+    /**
+     * Read easy question sets from file and random pick ten question sets
+     * from array list and keep in array.
+     */
     static void setQEasy() {
         ClassLoader loader = Question.class.getClassLoader();
         ArrayList<String> easySet = new ArrayList<>();
@@ -42,10 +46,19 @@ public class Question {
 
     }
 
+    /**
+     * Get array of easy question sets and return to use in others class.
+     * 
+     * @return array of easy question sets
+     */
     public static String[] getQEasy() {
         return itemsEasy;
     }
 
+    /**
+     * Read medium question sets from file and random pick ten question sets
+     * from array list and keep in array.
+     */
     static void setQMedium() {
         ClassLoader loader = Question.class.getClassLoader();
         ArrayList<String> mediumSet = new ArrayList<>();
@@ -72,10 +85,19 @@ public class Question {
         }
     }
 
+    /**
+     * Get array of medium question sets and return to use in others class.
+     * 
+     * @return array of medium question sets
+     */
     public static String[] getQMedium() {
         return itemsMedium;
     }
 
+    /**
+     * Read hard question sets from file and random pick ten question sets
+     * from array list and keep in array.
+     */
     static void setQHard() {
         ClassLoader loader = Question.class.getClassLoader();
         ArrayList<String> hardSet = new ArrayList<>();
@@ -102,6 +124,11 @@ public class Question {
         }
     }
 
+    /**
+     * Get array of hard question sets and return to use in others class.
+     * 
+     * @return array of hard question sets
+     */
     public static String[] getQHard() {
         return itemsHard;
     }
