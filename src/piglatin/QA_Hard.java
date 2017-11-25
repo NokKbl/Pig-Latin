@@ -51,10 +51,10 @@ public class QA_Hard extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        qHard.setFont(new java.awt.Font("Marker Felt", 0, 24)); // NOI18N
+        qHard.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         qHard.setForeground(new java.awt.Color(51, 0, 0));
         qHard.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        qHard.setText("Phrase / Sentence");
+        qHard.setText("phrase / sentence");
         getContentPane().add(qHard);
         qHard.setBounds(30, 70, 540, 80);
 

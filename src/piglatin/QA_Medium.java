@@ -71,12 +71,12 @@ public class QA_Medium extends javax.swing.JFrame {
         getContentPane().add(nxtBtn);
         nxtBtn.setBounds(470, 409, 106, 60);
 
-        qMed.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
+        qMed.setFont(new java.awt.Font("Comic Sans MS", 1, 25)); // NOI18N
         qMed.setForeground(new java.awt.Color(51, 0, 0));
         qMed.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         qMed.setText("word");
         getContentPane().add(qMed);
-        qMed.setBounds(185, 76, 230, 70);
+        qMed.setBounds(175, 76, 250, 70);
 
         medBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/Medium.png"))); // NOI18N
         getContentPane().add(medBG);

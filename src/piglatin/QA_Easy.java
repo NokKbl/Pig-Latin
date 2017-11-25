@@ -59,35 +59,35 @@ public class QA_Easy extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        qEZ.setFont(new java.awt.Font("Marker Felt", 0, 30)); // NOI18N
+        qEZ.setFont(new java.awt.Font("Comic Sans MS", 1, 27)); // NOI18N
         qEZ.setForeground(new java.awt.Color(51, 0, 0));
         qEZ.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         qEZ.setText("word");
         getContentPane().add(qEZ);
         qEZ.setBounds(210, 70, 180, 50);
 
-        choiceA.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
+        choiceA.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         choiceA.setForeground(new java.awt.Color(51, 0, 0));
         choiceA.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceA.setText("choice1");
         getContentPane().add(choiceA);
         choiceA.setBounds(170, 200, 140, 50);
 
-        choiceB.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
+        choiceB.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         choiceB.setForeground(new java.awt.Color(51, 0, 0));
         choiceB.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceB.setText("choice2");
         getContentPane().add(choiceB);
         choiceB.setBounds(360, 200, 150, 50);
 
-        choiceC.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
+        choiceC.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         choiceC.setForeground(new java.awt.Color(51, 0, 0));
         choiceC.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceC.setText("choice3");
         getContentPane().add(choiceC);
         choiceC.setBounds(160, 260, 150, 50);
 
-        choiceD.setFont(new java.awt.Font("Marker Felt", 0, 26)); // NOI18N
+        choiceD.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         choiceD.setForeground(new java.awt.Color(51, 0, 0));
         choiceD.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceD.setText("choice4");
