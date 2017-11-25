@@ -36,7 +36,7 @@ public class PlayerName extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        playerName.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        playerName.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         playerName.setForeground(new java.awt.Color(51, 0, 0));
         playerName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         playerName.setAutoscrolls(false);

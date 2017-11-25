@@ -60,6 +60,7 @@ public class GameAbout extends javax.swing.JFrame {
      */
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         new MainGame().setVisible(true);
+        MainGame.song.stop();
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
 

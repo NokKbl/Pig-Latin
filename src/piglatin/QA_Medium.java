@@ -51,7 +51,7 @@ public class QA_Medium extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(null);
 
-        medAns.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        medAns.setFont(new java.awt.Font("Comic Sans MS", 0, 24)); // NOI18N
         medAns.setForeground(new java.awt.Color(51, 0, 0));
         medAns.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         medAns.setToolTipText("");

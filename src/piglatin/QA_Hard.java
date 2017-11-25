@@ -58,7 +58,7 @@ public class QA_Hard extends javax.swing.JFrame {
         getContentPane().add(qHard);
         qHard.setBounds(30, 70, 540, 80);
 
-        hardAns.setFont(new java.awt.Font("Marker Felt", 0, 24)); // NOI18N
+        hardAns.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
         hardAns.setForeground(new java.awt.Color(51, 0, 0));
         hardAns.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         hardAns.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));

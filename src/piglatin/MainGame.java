@@ -1,5 +1,8 @@
 package piglatin;
 
+import kuusisto.tinysound.Music;
+import kuusisto.tinysound.TinySound;
+
 /**
  * Main menu for Igpay Atinlay (Pig Latin) game.
  * 
@@ -7,11 +10,16 @@ package piglatin;
  */
 public class MainGame extends javax.swing.JFrame {
 
+	public static Music song;
     /**
      * Creates new form MainGame
      */
     public MainGame() {
         initComponents();
+        TinySound.init();
+        song = TinySound.loadMusic("projectSource/bsound.wav");
+        song.play(true);
+        song.loop();
     }
 
     /**

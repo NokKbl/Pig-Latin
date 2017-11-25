@@ -56,6 +56,7 @@ public class ScoreInfo_Medium extends javax.swing.JFrame {
         setTitle("Score Info [Medium Lv.]");
         setMinimumSize(new java.awt.Dimension(600, 500));
         setPreferredSize(new java.awt.Dimension(600, 522));
+        setResizable(false);
         getContentPane().setLayout(null);
 
         restartBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/Restart.png"))); // NOI18N
@@ -94,35 +95,35 @@ public class ScoreInfo_Medium extends javax.swing.JFrame {
         getContentPane().add(newGBtn);
         newGBtn.setBounds(410, 420, 151, 70);
 
-        totalScore.setFont(new java.awt.Font("Marker Felt", 0, 70)); // NOI18N
+        totalScore.setFont(new java.awt.Font("Comic Sans MS", 1, 70)); // NOI18N
         totalScore.setForeground(new java.awt.Color(102, 51, 0));
         totalScore.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         totalScore.setText("500");
-        totalScore.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         getContentPane().add(totalScore);
         totalScore.setBounds(260, 230, 140, 70);
 
-        correctNo.setFont(new java.awt.Font("Marker Felt", 0, 45)); // NOI18N
+        correctNo.setFont(new java.awt.Font("Comic Sans MS", 0, 45)); // NOI18N
         correctNo.setForeground(new java.awt.Color(0, 102, 0));
         correctNo.setText("10");
         getContentPane().add(correctNo);
         correctNo.setBounds(190, 140, 70, 50);
 
-        wrongNo.setFont(new java.awt.Font("Marker Felt", 0, 45)); // NOI18N
+        wrongNo.setFont(new java.awt.Font("Comic Sans MS", 0, 45)); // NOI18N
         wrongNo.setForeground(new java.awt.Color(153, 0, 0));
         wrongNo.setText("10");
         getContentPane().add(wrongNo);
         wrongNo.setBounds(190, 220, 70, 50);
 
-        text.setFont(new java.awt.Font("Marker Felt", 0, 48)); // NOI18N
+        text.setFont(new java.awt.Font("Comic Sans MS", 1, 35)); // NOI18N
         text.setForeground(new java.awt.Color(204, 51, 0));
         text.setText("B r i l l i a n t !");
         getContentPane().add(text);
-        text.setBounds(200, 310, 330, 80);
+        text.setBounds(200, 300, 330, 80);
 
-        playerName.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        playerName.setFont(new java.awt.Font("Comic Sans MS", 1, 30)); // NOI18N
         playerName.setForeground(new java.awt.Color(102, 51, 0));
-        playerName.setText("Name");
+        playerName.setText("Player Name");
+        playerName.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         getContentPane().add(playerName);
         playerName.setBounds(290, 160, 220, 40);
 
@@ -155,6 +156,7 @@ public class ScoreInfo_Medium extends javax.swing.JFrame {
         QA_Medium.correct = 0;
         QA_Medium.wrong = 0;
         new MainGame().setVisible(true);
+        MainGame.song.stop();
         dispose();
     }//GEN-LAST:event_mainBtnActionPerformed
 

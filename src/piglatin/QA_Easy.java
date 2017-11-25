@@ -94,7 +94,7 @@ public class QA_Easy extends javax.swing.JFrame {
         getContentPane().add(choiceD);
         choiceD.setBounds(360, 260, 150, 50);
 
-        ezAns.setFont(new java.awt.Font("Marker Felt", 0, 36)); // NOI18N
+        ezAns.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
         ezAns.setForeground(new java.awt.Color(51, 0, 0));
         ezAns.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         ezAns.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
