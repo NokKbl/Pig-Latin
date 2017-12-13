@@ -3,7 +3,9 @@
 **Table of Contents**
 - [What is Igpay Atinlay?](#What-is-Igpay-Atinlay)
 - [How to play?](#How-to-play)
-- [How to download?](#How-to-download)
+- [How players earns score?](#How-to-earns-score)
+- [How to install?](#How-to-download)
+- [What does we learn?](#What-we-learn)
 - [Contributors](#Contributors)
 
 ## What is Igpay Atinlay?
@@ -44,7 +46,7 @@ This application is a language game that words in English are altered by adding 
         
     
 ### Score Info 
-Score Info will show correct and wrong problems amount of players , name score and some word depends on the score that players got.
+Score Info will show correct and wrong problems amount of players, name score and some word depends on the score that players got.
     
 ![ST](gameScreenShotandFont/Frame9.png)
     
@@ -56,12 +58,17 @@ Score Info will show correct and wrong problems amount of players , name score a
 - click **New Game** button to have new game (link back to input player's name window).
 - click **Exit** button to exit the game.
 
-## How to download the game?
+## How players earns score?
+
+## How to install the game?
 // TODO put step and other info later.
 
+## What does we learn from doing this project?
+
+
 ## Contributors
-   - [**Kunyaruk Katebunlu**](https://github.com/NokKbl) ( ID : 6010545692 )
-   - [**Vichakorn Yotboonrueang**](https://github.com/Newaz2542) ( ID : 6010545889 )
+   - [**Kunyaruk Katebunlu**](https://github.com/NokKbl) (ID: 6010545692)
+   - [**Vichakorn Yotboonrueang**](https://github.com/Newaz2542) (ID: 6010545889)
    
 **Note**
     This game application is a project of Programming 1 course for the first semester which created by students in Faculty of Software and Knowledge Engineering, Kasetsart University.

@@ -70,6 +70,7 @@ public class QA_Easy extends javax.swing.JFrame {
         choiceA.setForeground(new java.awt.Color(51, 0, 0));
         choiceA.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceA.setText("choice1");
+        choiceA.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         getContentPane().add(choiceA);
         choiceA.setBounds(170, 200, 140, 50);
 
@@ -77,6 +78,7 @@ public class QA_Easy extends javax.swing.JFrame {
         choiceB.setForeground(new java.awt.Color(51, 0, 0));
         choiceB.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceB.setText("choice2");
+        choiceB.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         getContentPane().add(choiceB);
         choiceB.setBounds(360, 200, 150, 50);
 
@@ -84,13 +86,15 @@ public class QA_Easy extends javax.swing.JFrame {
         choiceC.setForeground(new java.awt.Color(51, 0, 0));
         choiceC.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceC.setText("choice3");
+        choiceC.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         getContentPane().add(choiceC);
-        choiceC.setBounds(160, 260, 150, 50);
+        choiceC.setBounds(170, 260, 140, 50);
 
         choiceD.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
         choiceD.setForeground(new java.awt.Color(51, 0, 0));
         choiceD.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         choiceD.setText("choice4");
+        choiceD.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         getContentPane().add(choiceD);
         choiceD.setBounds(360, 260, 150, 50);
 
