@@ -8,7 +8,7 @@
 - [Contributors](#contributors)
 
 ## What is Igpay Atinlay?
-This application is a language game that words in English are altered by adding a fabricated suffix or by moving the onset or initial consonant or consonant cluster of a word to the end of the word and adding a vocalic syllable to create such a suffix.
+This program is a language game that words in English are altered by adding a fabricated suffix or by moving the onset or initial consonant or consonant cluster of a word to the end of the word and adding a vocalic syllable to create such a suffix.
     
 ![banner](gameScreenShotandFont/Banner.png)
 
@@ -70,15 +70,93 @@ To run and play this program, your computer need:
  - IgpayAtinlay.jar
  
  ### How to run
- 1. Download runnable IgpayAtinlay.jar file by click at 'IgpayAtinlay.jar' file above then click download.
+ 1. Download a runnable JAR file by click at 'IgpayAtinlay.jar' file above then click download.
  2. Runs IgpayAtinlay.jar file.
 
 ## What does we learn from doing this project?
+From doing this project, we had learned about **Graphic User Interface (GUI)** by using Java Swing and also learned about other commands to use in JFrame Form. For example, ...
+- Command for close one frame and open another frame.
+```
+new GameAbout().setVisible(true);
+dispose();
+```
+- Commands for set some properties of a frame
+ - to set title of frame
+```
+setTitle("Igpay Altinlay [Pig Latin]");
+```
+ - to set that the frame can be resize or not
+ ```
+setResizable(false);
+```
+ - to set size of the frame
+```
+setPreferredSize(new java.awt.Dimension(600, 522));
+```
+- Commands for get input from players by using JTextField then get input from Text Field and change it into String to use.
+```
+JTextField ezAns = new JTextField();
+String inputAns = ezAns.getText();
+```
 
+**We also used knowledge from the lesson in the class, those are…**
+- Use **“Encapsulation”** to protect some of our data.
+```
+static private String[] qEasy;
+```
+- **Read data from file** and use **“List”** for keep questions, choices and answers.
+```
+static String menuFileEasy = "qData/easyQandA.txt";
+static private String itemsEasy[];
+static Random rand = new Random();
+
+static void setQEasy() {
+    ClassLoader loader = Question.class.getClassLoader();
+    ArrayList<String> easySet = new ArrayList<>();
+    InputStream in = loader.getResourceAsStream(menuFileEasy);
+    if (in == null) {
+        System.out.println("Could not access file " + menuFileEasy);
+        return;
+    }
+    Scanner scanFile = new Scanner(in);
+    while (scanFile.hasNextLine()) {
+        String line = scanFile.nextLine();
+        if (line.startsWith("#") || line.startsWith(" #") || line.equals("")) {
+            continue;
+        }
+        easySet.add(line);
+    }
+    scanFile.close();
+
+    itemsEasy = new String[10];
+    for (int i = 0; i < itemsEasy.length; i++) {
+        int r = rand.nextInt(easySet.size() - 1) + 1;
+        itemsEasy[i] = easySet.get(r);
+        easySet.remove(r);
+    }
+}
+```
+- Use **“Data Types in Java”** for help to decide types of variables in project.
+```
+static String inAns;
+static int score = 0;
+static boolean check;
+```
+- Use **“Inheritance”** to use methods from other classes.
+Example: QA_Easy class inherit JFrame class.
+```
+public class QA_Easy extends javax.swing.JFrame
+```
+- Use **“Object”** lesson to create JButton objects, JLabel objects, JTextField objects and also JFrame objects.
+```
+JTextField ezAns = new JTextField();
+JButton nxtBtn = new JButton();
+JLabel ezBG = new JLabel();
+```
 
 ## Contributors
    - [**Kunyaruk Katebunlu**](https://github.com/NokKbl) (ID: 6010545692)
    - [**Vichakorn Yotboonrueang**](https://github.com/Newaz2542) (ID: 6010545889)
    
 **Note**
-    This game application is a project of Programming 1 course for the first semester which created by students in Faculty of Software and Knowledge Engineering, Kasetsart University.
+    This program is a project of Programming 1 course for the first semester which created by students in Faculty of Software and Knowledge Engineering, Kasetsart University.
