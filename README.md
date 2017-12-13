@@ -28,6 +28,7 @@ This program is a language game that words in English are altered by adding a fa
 - **Easy**
 
     In easy level, we'll give a word and choices for players. The players need to choose a correct answer and type letter into the answer box.
+    
     **Score:**
     For easy level -  this level contains 10 questions with 10 points each. Full score is 100 points.
         
@@ -36,6 +37,7 @@ This program is a language game that words in English are altered by adding a fa
 - **Medium**
 
     In medium level, we'll only give a word to players and the players need to type a correct answer into the answer box below.
+    
     **Score:**
     For medium level - this level contains 10 questions with 50 points each. Full score is 500 points.
     
@@ -44,6 +46,7 @@ This program is a language game that words in English are altered by adding a fa
 - **Hard**
 
     In hard level, we'll give a phrase or a sentence to players and the players need to type a correct answer into the answer box below.
+    
     **Score:**
     For hard level - this level contains 5 questions with 200 points each. Full score is 1000 points.
         
