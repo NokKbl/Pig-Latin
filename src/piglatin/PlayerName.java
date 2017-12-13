@@ -81,6 +81,7 @@ public class PlayerName extends javax.swing.JFrame {
      */
     private void backBtnAcitonPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnAcitonPerformed
         new MainGame().setVisible(true);
+        MainGame.song.stop();
         dispose();
     }//GEN-LAST:event_backBtnAcitonPerformed
 

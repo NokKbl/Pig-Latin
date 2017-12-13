@@ -37,6 +37,7 @@ public class GameAbout extends javax.swing.JFrame {
         backBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/projectSource/Back.png"))); // NOI18N
         backBtn.setBorderPainted(false);
         backBtn.setContentAreaFilled(false);
+        backBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         backBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backBtnActionPerformed(evt);
