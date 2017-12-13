@@ -1,8 +1,8 @@
 # Igpay Atinlay ( Pig Latin )
 
 **Table of Contents**
-- [What is Igpay Atinlay?](#What-is-Igpay-Atinlay?)
-- [How to play?](#How-to-play?)
+- [What is Igpay Atinlay?](##What-is-Igpay-Atinlay?)
+- [How to play?](##How-to-play?)
 - [How players earns score?](#How-to-earns-score)
 - [How to install?](#How-to-install)
 - [What does we learn?](#What-we-learn)
