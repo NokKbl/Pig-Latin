@@ -17,7 +17,7 @@ This program is a language game that words in English are altered by adding a fa
 
 ![Main](gameScreenShotandFont/Frame1.png)
 
-**2.** Type your name then click :arrow_right: button (or click :arrow_left: button to go back to main menu )
+**2.** Type your name then click :arrow_right: button (or click :arrow_left: button to go back to main menu)
 
 ![Name](gameScreenShotandFont/Frame4.png)
 
@@ -162,5 +162,5 @@ JLabel ezBG = new JLabel();
    - [**Kunyaruk Katebunlu**](https://github.com/NokKbl) (ID: 6010545692)
    - [**Vichakorn Yotboonrueang**](https://github.com/Newaz2542) (ID: 6010545889)
    
-**Note**
+   **Note:**
     This program is a project of Programming 1 course for the first semester which created by students in Faculty of Software and Knowledge Engineering, Kasetsart University.
