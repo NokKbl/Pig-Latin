@@ -1,12 +1,11 @@
 # Igpay Atinlay ( Pig Latin )
 
 **Table of Contents**
-- [What is Igpay Atinlay?](##What-is-Igpay-Atinlay?)
-- [How to play?](##How-to-play?)
-- [How players earns score?](#How-to-earns-score)
-- [How to install?](#How-to-install)
-- [What does we learn?](#What-we-learn)
-- [Contributors](#Contributors)
+- [What is Igpay Atinlay?](#what-is-igpay-atinlay)
+- [How to play?](#how-to-play)
+- [How to install?](#how-to-install-the-game)
+- [What does we learn?](#what-does-we-learn-from-doing-this-project)
+- [Contributors](#contributors)
 
 ## What is Igpay Atinlay?
 This application is a language game that words in English are altered by adding a fabricated suffix or by moving the onset or initial consonant or consonant cluster of a word to the end of the word and adding a vocalic syllable to create such a suffix.
@@ -28,19 +27,25 @@ This application is a language game that words in English are altered by adding 
 
 - **Easy**
 
-    In easy mode, we'll give a word and choices for players. The players need to choose a correct answer and type letter into the answer box.
+    In easy level, we'll give a word and choices for players. The players need to choose a correct answer and type letter into the answer box.
+    **Score:**
+    For easy level -  this level contains 10 questions with 10 points each. Full score is 100 points.
         
 ![EZ](gameScreenShotandFont/Frame6.png)
         
 - **Medium**
 
-    In medium mode, we'll only give a word to players and the players need to type a correct answer into the answer box below.
+    In medium level, we'll only give a word to players and the players need to type a correct answer into the answer box below.
+    **Score:**
+    For medium level - this level contains 10 questions with 50 points each. Full score is 500 points.
     
 ![MD](gameScreenShotandFont/Frame8.png)
     
 - **Hard**
 
-    In hard mode, we'll give a phrase or a sentence to players and the players need to type a correct answer into the answer box below.
+    In hard level, we'll give a phrase or a sentence to players and the players need to type a correct answer into the answer box below.
+    **Score:**
+    For hard level - this level contains 5 questions with 200 points each. Full score is 1000 points.
         
 ![H](gameScreenShotandFont/Frame7.png)
         
@@ -58,10 +63,15 @@ Score Info will show correct and wrong problems amount of players, name score an
 - click **New Game** button to have new game (link back to input player's name window).
 - click **Exit** button to exit the game.
 
-## How players earns score?
-
 ## How to install the game?
-// TODO put step and other info later.
+### Installation
+To run and play this program, your computer need:
+ - Java version 8 or newer
+ - IgpayAtinlay.jar
+ 
+ ### How to run
+ 1. Download runnable IgpayAtinlay.jar file by click at 'IgpayAtinlay.jar' file above then click download.
+ 2. Runs IgpayAtinlay.jar file.
 
 ## What does we learn from doing this project?
 
