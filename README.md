@@ -81,19 +81,19 @@ new GameAbout().setVisible(true);
 dispose();
 ```
 - Commands for set some properties of a frame
- - to set title of frame
+Example: to set title of frame
 ```
 setTitle("Igpay Altinlay [Pig Latin]");
 ```
- - to set that the frame can be resize or not
+Example: to set that the frame can be resize or not
  ```
 setResizable(false);
 ```
- - to set size of the frame
+Example: to set size of the frame
 ```
 setPreferredSize(new java.awt.Dimension(600, 522));
 ```
-- Commands for get input from players by using JTextField then get input from Text Field and change it into String to use.
+Example: Commands for get input from players by using JTextField then get input from Text Field and change it into String to use.
 ```
 JTextField ezAns = new JTextField();
 String inputAns = ezAns.getText();
