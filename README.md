@@ -101,11 +101,11 @@ String inputAns = ezAns.getText();
 ```
 
 **We also used knowledge from the lesson in the class, those are…**
-- Use **“Encapsulation”** to protect some of our data.
+- Use **Encapsulation** to protect some of our data.
 ```
 static private String[] qEasy;
 ```
-- **Read data from file** and use **“List”** for keep questions, choices and answers.
+- **Read data from file** and use **List** for keep questions, choices and answers.
 ```
 static String menuFileEasy = "qData/easyQandA.txt";
 static private String itemsEasy[];
@@ -137,18 +137,18 @@ static void setQEasy() {
     }
 }
 ```
-- Use **“Data Types in Java”** for help to decide types of variables in project.
+- Use **Data Types in Java** for help to decide types of variables in project.
 ```
 static String inAns;
 static int score = 0;
 static boolean check;
 ```
-- Use **“Inheritance”** to use methods from other classes.
+- Use **Inheritance** to use methods from other classes.
 **Example:** QA_Easy class inherit JFrame class.
 ```
 public class QA_Easy extends javax.swing.JFrame
 ```
-- Use **“Object”** lesson to create JButton objects, JLabel objects, JTextField objects and also JFrame objects.
+- Use **Object** lesson to create JButton objects, JLabel objects, JTextField objects and also JFrame objects.
 ```
 JTextField ezAns = new JTextField();
 JButton nxtBtn = new JButton();
