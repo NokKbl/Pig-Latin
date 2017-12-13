@@ -81,19 +81,20 @@ new GameAbout().setVisible(true);
 dispose();
 ```
 - Commands for set some properties of a frame
-Example: to set title of frame
+
+**Example:** to set title of frame
 ```
 setTitle("Igpay Altinlay [Pig Latin]");
 ```
-Example: to set that the frame can be resize or not
+**Example:** to set that the frame can be resize or not
  ```
 setResizable(false);
 ```
-Example: to set size of the frame
+**Example:** to set size of the frame
 ```
 setPreferredSize(new java.awt.Dimension(600, 522));
 ```
-Example: Commands for get input from players by using JTextField then get input from Text Field and change it into String to use.
+**Example:** Commands for get input from players by using JTextField then get input from Text Field and change it into String to use.
 ```
 JTextField ezAns = new JTextField();
 String inputAns = ezAns.getText();
@@ -143,7 +144,7 @@ static int score = 0;
 static boolean check;
 ```
 - Use **“Inheritance”** to use methods from other classes.
-Example: QA_Easy class inherit JFrame class.
+**Example:** QA_Easy class inherit JFrame class.
 ```
 public class QA_Easy extends javax.swing.JFrame
 ```
