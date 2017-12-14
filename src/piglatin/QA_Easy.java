@@ -1,5 +1,7 @@
 package piglatin;
 
+import javax.swing.JTextField;
+
 /**
  * Get, split and show questions and choices in easy level,
  * get input answer from players then check answer, count correct/wrong

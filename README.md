@@ -8,7 +8,7 @@
 - [Contributors](#contributors)
 
 ## What is Igpay Atinlay?
-This program is a language game that words in English are altered by adding a fabricated suffix or by moving the onset or initial consonant or consonant cluster of a word to the end of the word and adding a vocalic syllable to create such a suffix.
+This program is a language game that words in English are altered by adding a fabricated suffix or by moving the onset of initial consonant or consonant cluster of a word to the end of the word and adding a vocalic syllable to create such a suffix.
     
 ![banner](gameScreenShotandFont/Banner.png)
 
