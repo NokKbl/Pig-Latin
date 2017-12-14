@@ -1,10 +1,10 @@
-# Igpay Atinlay ( Pig Latin )
+# Igpay Atinlay (Pig Latin)
 
 **Table of Contents**
 - [What is Igpay Atinlay?](#what-is-igpay-atinlay)
 - [How to play?](#how-to-play)
 - [How to install?](#how-to-install-the-game)
-- [What does we learn?](#what-does-we-learn-from-doing-this-project)
+- [What does we learn and use?](#what-does-we-learn-from-doing-this-project)
 - [Contributors](#contributors)
 
 ## What is Igpay Atinlay?
@@ -151,7 +151,7 @@ static boolean check;
 ```
 public class QA_Easy extends javax.swing.JFrame
 ```
-- Use **Object** lesson to create JButton objects, JLabel objects, JTextField objects and also JFrame objects.
+- Use **Object** lesson to create JButton, JLabel, JTextField and also JFrame.
 ```
 JTextField ezAns = new JTextField();
 JButton nxtBtn = new JButton();
